@@ -1,0 +1,10 @@
+export { default as AirwatchImage } from "./airwatch.webp";
+export { default as F1SoftImage } from "./F1SOFT LOGO.png";
+export { default as KMCImage } from "./KMC LOGO.png";
+export { default as KrispCallImage } from "./KRISPCALL LOGO.jpeg";
+export { default as LibraryImage } from "./library.webp";
+export { default as SkygazeImage } from "./skygaze.webp";
+export { default as TodoImage } from "./todo.webp";
+export { default as VIPSImage } from "./vips.webp";
+export { default as VITImage } from "./VIT LOGO.png";
+export { default as VueBitsImage } from "./vue-bits.webp";
