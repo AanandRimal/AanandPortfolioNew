@@ -37,21 +37,21 @@ export function Contact({ data }: { data: Record<string, string> }) {
 
         <div className="flex justify-center items-center gap-6 pt-2">
           <Link
-            href="#"
+            href={data.GITHUB}
             className="text-gray-400 hover:text-white transition-colors"
             onClick={() => handleChange(data.GITHUB)}
           >
             <Github className="w-5 h-5" />
           </Link>
           <Link
-            href="#"
+            href={data.LINKEDIN}
             className="text-gray-400 hover:text-white transition-colors"
             onClick={() => handleChange(data.LINKEDIN)}
           >
             <Linkedin className="w-5 h-5" />
           </Link>
           <Link
-            href="mailto:utkarsh@example.com"
+            href={data.EMAIL}
             className="text-gray-400 hover:text-white transition-colors"
             onClick={() => handleChange(data.EMAIL)}
           >
