@@ -10,7 +10,8 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface IProjectData {
-  IMAGE: StaticImageData;
+  IMAGE?: StaticImageData;
+  VIDEO?: string;
   LIVE_PREVIEW?: string;
   GITHUB?: string;
   DESCRIPTION: string[];
@@ -45,21 +46,32 @@ export default function Page() {
 
           return (
             <React.Fragment key={key}>
-              <div className="items-start gap-12 grid lg:grid-cols-2 cursor-target">
-                <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
+              <div className="items-start gap-12 grid lg:grid-cols-5 cursor-target">
+                <div className={`${isEven ? "lg:order-1 lg:col-span-3" : "lg:order-2 lg:col-span-3"}`}>
                   <div className="relative rounded-lg overflow-hidden">
-                    <Image
-                      src={value.IMAGE || "/placeholder.svg"}
-                      alt={key}
-                      width={600}
-                      height={400}
-                      className="w-full h-80 object-cover"
-                    />
+                    {value.VIDEO ? (
+                      <video
+                        src={value.VIDEO}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-80"
+                      />
+                    ) : (
+                      <Image
+                        src={value.IMAGE || "/placeholder.svg"}
+                        alt={key}
+                        width={600}
+                        height={400}
+                        className="w-full h-80 object-cover"
+                      />
+                    )}
                   </div>
                 </div>
 
                 <div
-                  className={`space-y-6 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300 pl-4 ${isEven ? "lg:order-2" : "lg:order-1"}`}
+                  className={`space-y-6 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300 pl-4 ${isEven ? "lg:order-2 lg:col-span-2" : "lg:order-1 lg:col-span-2"}`}
                 >
                   <div>
                     <h2 className="mb-1 font-medium text-2xl">{key}</h2>

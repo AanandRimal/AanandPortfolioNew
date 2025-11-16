@@ -19,7 +19,8 @@ export interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
-  IMAGE: StaticImageData;
+  IMAGE?: StaticImageData;
+  VIDEO?: string;
 }
 
 export const DATA = {
@@ -30,7 +31,7 @@ export const DATA = {
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
     RESUME:
-      "https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view",
+      "https://drive.google.com/file/d/1O2m8h5Gz1JK7pu9_LIMbWQ3Ec6IjEVvo/view?usp=sharing",
     EMAIL: "mailto:aanandrimalo@gmail.com",
     GITHUB: "https://github.com/AanandRimal",
     LINKEDIN: "https://www.linkedin.com/in/aanand-rimal/",
@@ -115,47 +116,56 @@ export const DATA = {
   },
 
   PROJECTS: {
-    "VIPS-TC": {
-      LIVE_PREVIEW: "https://vips.edu",
+    "Summarify-Utube.AI": {
+      LIVE_PREVIEW: "https://summarify-utube.ai",
       DESCRIPTION: [
-        "Contributed to the development and maintenance of the main VIPS-TC website.",
-        "Implemented various front-end features using modern React and Material UI libraries.",
-        "Ensured responsive design and cross-browser compatibility for a seamless user experience.",
-        "Collaborated with the team to enhance website performance and accessibility.",
+        "Summarify-YT.ai extracts transcripts from YouTube videos, generates multilingual summaries, and enables users to ask questions answered using a Neo4j-powered knowledge graph. It features voice input, customizable summary styles, dark/light mode, and a smooth modern UI."
       ],
       TECH_STACK: [
-        "React.js",
-        "Material UI",
-        "Axios",
-        "Firebase",
-        "Styled Components",
-        "Razorpay",
-        "XLSX",
+        "FastAPI",
+        "Groq LLM",
+        "Neo4j",
+        "Python",
+        "Tailwind CSS",
+        "JavaScript"
       ],
-      IMAGE: VIPSImage,
+      VIDEO: "/Youtube-Summarizer.mp4",
     },
-    "Vue Bits": {
+    "Text2Comic.ai – AI Text-to-Comic Generator": {
       SLUG: "vue-bits",
       LIVE_PREVIEW: "https://vue-bits.dev/",
       GITHUB: "https://github.com/DavidHDev/vue-bits",
       DESCRIPTION: [
-        "Contributed 20+ components to the largest and most creative library of animated Vue components.",
-        "Helped develop highly customizable animated UI elements for modern web projects, including text animations, backgrounds, and interactive visuals.",
-        "Components are designed for seamless integration with Vue.js and Nuxt projects, providing minimal dependencies and flexible prop-based customization.",
-        "Open-source collection growing weekly, inspired by the React Bits project.",
+        "Text2Comic.ai transforms any plain text into a comic strip automatically.It converts user text into character-dialogue pairs, generates comic-style scenes using AI image models, overlays speech bubbles, and exports the final comic as a multi-panel PDF — all fully automated."
       ],
-      TECH_STACK: ["Vue.js", "TypeScript", "Tailwind CSS"],
-      IMAGE: VueBitsImage,
+      TECH_STACK: [
+        "Flask",
+        "GPT-3.5 Turbo",
+        "Stable Diffusion",
+        "OpenCV",
+        "Pillow",
+        "Python"
+      ],
+      VIDEO: "/Text2Comic.AI.mp4",
     },
-    "Digital Library, VIPS-TC": {
+    "CareerPilot-AI": {
       LIVE_PREVIEW: "https://btech.library.vips.edu/",
       DESCRIPTION: [
-        "Developed and launched a functional library website for a technical institution.",
-        "Implemented user-friendly interface to improve accessibility of library resources.",
-        "Designed responsive layout ensuring compatibility across desktop and mobile devices",
+        "CareerPilot AI analyzes uploaded resumes, generates ATS scores, identifies skill gaps, and provides personalized improvements. It also offers AI-generated cover letters, cold emails, interview preparation, and a context-aware career coach powered by Gemini and LangChain."
       ],
-      TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
-      IMAGE: LibraryImage,
+      TECH_STACK: [
+        "Flask",
+        "Next.js 15",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Google Gemini 2.5 Flash",
+        "LangChain",
+        "spaCy",
+        "scikit-learn"
+      ],
+      VIDEO: "/CareerPilotAi Video.mp4",
     },
     "Skygaze India": {
       LIVE_PREVIEW: "https://www.skygazeindia.com/",
@@ -222,31 +232,11 @@ export const DATA = {
     "ORMs & ODMs: Choosing the Right Tool for Your Database Needs": {
       DATE: "March 24, 2025",
       TIME: "4",
-      LINK: "https://www.linkedin.com/pulse/orms-odms-choosing-right-tool-your-database-needs-utkarsh-singhal-dnshc/",
+      LINK: "https://www.linkedin.com/in/aanand-rimal/",
       DESCRIPTION:
         "Object-Relational Mappers (ORMs) and Object-Document Mappers (ODMs) play a crucial role in modern application development by abstracting database interactions and simplifying data management. Whether you're working with relational databases like PostgreSQL and MySQL or NoSQL databases like MongoDB, selecting the right ORM or ODM can significantly impact performance, scalability, and maintainability.",
     },
-    "Mastering TypeScript Generics: Building Flexible and Scalable Code": {
-      DATE: "March 8, 2025",
-      TIME: "7",
-      LINK: "https://www.linkedin.com/pulse/mastering-typescript-generics-building-flexible-scalable-singhal-f77bc/",
-      DESCRIPTION:
-        "When building robust and scalable applications in TypeScript, flexibility and reusability are key. One of the most powerful features that helps achieve this is Generics. Generics allow developers to create functions, classes, and interfaces that can work with any data type, ensuring that the code is more flexible, reusable, and easier to maintain.",
-    },
-    "TypeScript and React: Harnessing the Full Power of Types": {
-      DATE: "March 11, 2025",
-      TIME: "6",
-      LINK: "https://www.linkedin.com/pulse/typescript-react-harnessing-full-power-types-utkarsh-singhal-6bxuc/",
-      DESCRIPTION:
-        "React has become the go-to library for building dynamic user interfaces, and TypeScript has emerged as a powerful tool for adding static types to JavaScript applications. While many developers use TypeScript with React, they often only scratch the surface of its capabilities.",
-    },
-    "Understanding Utility Types in TypeScript: Supercharging Your Codebase": {
-      DATE: "March 10, 2025",
-      TIME: "7",
-      LINK: "https://www.linkedin.com/pulse/understanding-utility-types-typescript-supercharging-your-singhal-zdxwc/",
-      DESCRIPTION:
-        "TypeScript is renowned for its ability to enhance JavaScript applications by adding static typing. However, when working with complex types, developers often find themselves repeating type definitions or restructuring types to fit different contexts. This is where Utility Types in TypeScript come to the rescue.",
-    },
+   
   },
 
   EDUCATION: {

@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: "Aanand Rimal | Software Developer",
   description:
     "Software developer specializing in Next.js, TypeScript and Node.js.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "Aanand Rimal | Software Developer",
     description:
