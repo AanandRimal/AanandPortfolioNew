@@ -5,12 +5,10 @@ import {
   F1SoftImage,
   KMCImage,
   KrispCallImage,
-  LibraryImage,
   SkygazeImage,
   TodoImage,
-  VIPSImage,
   VITImage,
-  VueBitsImage,
+
 } from "@/assets";
 
 export interface IProjectData {
