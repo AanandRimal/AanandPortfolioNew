@@ -117,7 +117,7 @@ export const DATA = {
 
   PROJECTS: {
     "Summarify-Utube.AI": {
-      LIVE_PREVIEW: "https://summarify-utube.ai",
+      LIVE_PREVIEW: "https://summarify-youtube-ai.vercel.app",
       DESCRIPTION: [
         "Summarify-YT.ai extracts transcripts from YouTube videos, generates multilingual summaries, and enables users to ask questions answered using a Neo4j-powered knowledge graph. It features voice input, customizable summary styles, dark/light mode, and a smooth modern UI."
       ],
@@ -133,8 +133,8 @@ export const DATA = {
     },
     "Text2Comic.ai – AI Text-to-Comic Generator": {
       SLUG: "vue-bits",
-      LIVE_PREVIEW: "https://vue-bits.dev/",
-      GITHUB: "https://github.com/DavidHDev/vue-bits",
+      LIVE_PREVIEW: "https://text2comicai.vercel.app/",
+      GITHUB: "https://github.com/AanandRimal/Text2Comic.AI",
       DESCRIPTION: [
         "Text2Comic.ai transforms any plain text into a comic strip automatically.It converts user text into character-dialogue pairs, generates comic-style scenes using AI image models, overlays speech bubbles, and exports the final comic as a multi-panel PDF — all fully automated."
       ],
@@ -149,7 +149,7 @@ export const DATA = {
       VIDEO: "/Text2Comic.AI.mp4",
     },
     "CareerPilot-AI": {
-      LIVE_PREVIEW: "https://btech.library.vips.edu/",
+      LIVE_PREVIEW: "career-pilot-ai-one.vercel.app",
       DESCRIPTION: [
         "CareerPilot AI analyzes uploaded resumes, generates ATS scores, identifies skill gaps, and provides personalized improvements. It also offers AI-generated cover letters, cold emails, interview preparation, and a context-aware career coach powered by Gemini and LangChain."
       ],
