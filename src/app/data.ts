@@ -29,7 +29,7 @@ export const DATA = {
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
     RESUME:
-      "https://drive.google.com/file/d/1O2m8h5Gz1JK7pu9_LIMbWQ3Ec6IjEVvo/view?usp=sharing",
+      "https://drive.google.com/file/d/1hViHUdgmM6BYxd2nkYE_ZONuBeO7XckW/view?usp=sharing",
     EMAIL: "mailto:aanandrimalo@gmail.com",
     GITHUB: "https://github.com/AanandRimal",
     LINKEDIN: "https://www.linkedin.com/in/aanand-rimal/",
@@ -234,7 +234,7 @@ export const DATA = {
       DESCRIPTION:
         "Object-Relational Mappers (ORMs) and Object-Document Mappers (ODMs) play a crucial role in modern application development by abstracting database interactions and simplifying data management. Whether you're working with relational databases like PostgreSQL and MySQL or NoSQL databases like MongoDB, selecting the right ORM or ODM can significantly impact performance, scalability, and maintainability.",
     },
-   
+
   },
 
   EDUCATION: {
