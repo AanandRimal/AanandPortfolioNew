@@ -93,7 +93,7 @@ export const DATA = {
       WEBSITE: "https://f1soft.com/",
       POSITION: "Web Development Intern",
       LOCATION: "Onsite, Nepal",
-      DURATION: "Jun, 2023 - Aug, 2023",
+      DURATION: "Jun, 2023 - Aug, 2024",
       DESCRIPTION: [
         "Developed full-stack task management application using MERN stack, focusing on building RESTful APIs and implementing JWT-based authentication.",
         "Created and managed tasks with categorization and prioritization filters, designing responsive interfaces using Material UI.",
